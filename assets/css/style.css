@@ -1,0 +1,361 @@
+/**
+ * Stylesheet - Basic Portfolio Website
+ **/
+ 
+ /* Begin styles for shared elements and home (index) page */
+  
+ * {
+    box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+
+/* all columns will float left (taken out of the normal page flow) */
+/* [class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%; 
+} */
+/* since float left takes the columns out of the page flow
+/* causing other elements to be placed as if the columns don't exist
+/* we have to clear the flow */
+/* .row::after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+body {
+    background-color: #ffffff;
+    overflow: auto;
+    height: 100%;
+}
+
+/* Begin Navigation Bar Styles */
+
+#navTop {
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.navContainer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.navContainer #nameTab {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+   
+.navContainer ul {
+    float: right;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navContainer ul li {
+    list-style-type: none;
+    display: inline; 
+  
+}
+
+.navContainer li:not(:first-child):before {
+    content: " | ";
+    color: #777777;
+} 
+  
+.navContainer ul li a {
+    text-decoration: none;
+    color: #777777;
+    padding: 14px 16px;
+    font-size: 12px;
+  
+}
+  
+.navContainer ul li a:hover {
+      background-color: #dddddd;
+      color: #4aaaa5;
+}
+  
+/* End navigation bar styles */
+
+
+
+/* set main background properties */
+#mainBackground {
+   position: fixed;
+   top: 50px;
+   left: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('../images/concrete-texture.png'); 
+   /* remember to set alt background-color: white; in case can't dsp image */
+   background-color: #ffffff;
+   background-repeat: repeat;
+   border-top-color: #cccccc;
+   border-style: solid;
+   border-width: 1.5px 0px 0px 0px;
+
+}
+
+.contentArea {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 50px;
+    margin-top: 50px;
+
+     /*  note to self: not setting a height allows page to move with content */
+   height: 600px;  
+   background-color: #ffffff;
+   border-color: #dddddd;
+   border-style: solid;
+   border-width: 1px 1px 1px 1px;
+   
+}
+
+.contentHeader {
+    color: #4aaaa5;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 55px;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 25px;
+}
+
+/* #grayLine {
+  position: relative;
+  height: 2px;
+  padding: 0px;
+  margin-bottom: 25px;
+  background: #dddddd;
+  
+} */
+.bioImage {
+    display: block;
+    position: relative;
+    clear: both;
+   
+}     
+
+.floatLeft {
+    float: left;
+    margin-right: 25px;
+       
+}
+
+
+p {
+        margin: auto;
+        color: #777777;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: justify;
+}
+
+a.linkedIn:link{color:#4aaaa5;}
+a.linkedIn:visited{color: #777777;}
+a.linkedIn:hover{color: #bbfffb;}
+
+
+.indented {
+   padding-left: 50pt;
+   padding-right: 50pt;
+   text-align: justify;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #777777;
+   line-height: 150%;
+   font-size: 15px;
+   
+}
+
+.indented ul {
+    list-style: none;
+}
+/* sticky footer styling */
+
+/* https://css-tricks.com/snippets/css/sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+
+footer,
+.push {
+  height: 50px;
+}
+
+/* end sticky footer styling */
+
+.footerContainer {
+border-top: 5px solid #4aaaa5;
+width: 100%;
+background-color: #666666;
+color: #ffffff;
+text-align: center;  
+
+position: fixed;
+left: 0;
+bottom: 0;
+line-height: 65px;
+height: 50px;
+z-index: 4;
+}
+
+ /**
+  * Begin styles for contact page
+  **/      
+label {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+}
+  .userDataForm {
+      float: left;
+}
+#name {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+       
+}
+#email {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+}
+#message {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+.submit {
+    background-color: #4aaaa5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+  /*  Begin styles for portfolio page */
+
+.row {
+    margin: 0px;
+}
+
+.row > .column {
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.column {
+float: left;
+width: 360px;
+}
+
+.photoContainer {
+position: relative;
+}
+
+.photoTag {
+position: relative;
+left: 0px;
+bottom: 60px;
+background-color: #4aaaa5;
+color: white;
+padding-top: 10px; 
+padding-bottom: 10px; 
+text-align: center;
+
+}
+/* show photo credits on hover */
+
+.photoContainer:hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background-color: black;
+   /* note to self: not sure the difference between the background and background color, also rgb vs hex color id? */ 
+   /* background: rgb(0, 0, 0); */
+    color: #ffffff; 
+    width: 100%;
+    opacity:0;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    text-align: center; 
+}
+
+/* @media queries go here (bottom of style.css) */
+
+@media only screen and (max-width: 640px) {
+/* For small screen devices */
+    .navContainer, .contentHeader, .bioImage, .paraContent {
+        width: 100%;
+    }
+    .navSect1 {
+        width: 100%;
+    }
+    .navSect2 {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+/* For medium screen devices */
+    .navContainer {
+        width: 100%;
+    }   
+
+}
+
+
+@media only screen and (max-width: 980px) {
+    .navContainer {
+        width: 100%;
+     
+    }
+   
+    .name {
+        width: 100%;
+     
+    }
+    
+
+}   
+
+
+
+

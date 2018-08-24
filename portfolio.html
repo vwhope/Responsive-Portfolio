@@ -1,0 +1,113 @@
+<!-- Vicki Hope Responsive Portfolio - Portfolio Page -->
+<!-- the point of this exercise is to NOT use bootstrap classes -->
+<!-- but instead use @media queries to create responsive web pages -->
+<!-- I should not need JavaScript to run media queries -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- For @media queries, you must include the meta viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FIRST reset values for improved cross-platfrom compatibility -->
+        <!-- Use Eric Meyer CSS Reset file -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/css/resetEricMeyer.css"> -->
+                 
+        <!-- SECOND apply internal Custom CSS file for styles -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>Responsive Portfolio - Vicki Hope - Portfolio</title>
+    </head>
+
+
+
+<body>
+    
+    <!-- begin navigation bar -->
+    <nav id="navTop">
+        <div class="navContainer">
+
+            <div id="nameTab" class="navSect1">
+                <h3>Vicki Hope</h3>
+            </div>
+    
+            <ul class="navSect2" >
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          
+        </div>
+</nav>
+<!-- end navigation bar -->
+
+
+
+<!-- Main textured background - entire page -->
+<div id="mainBackground">
+
+    <!-- White contentArea elements -->
+    <div class="contentArea">
+
+        <div class="contentHeader"><h3>Portfolio</h3></div>
+
+        <!-- <div id="grayLine"></div> -->
+
+    <!-- White contentArea Portfolio Image Gallery with labels -->
+    <div class="row">
+        <div class="column">
+          <div class="photoContainer">
+            <img src="assets/images/camera-keys.jpg" alt="camera keys image" style="max-width:100%">
+            <div class="photoTag">
+                <h4>Hangman</h4>
+                  <div class="overlay">Photo courtesy of Nicola Perantoni</div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="photoContainer">
+            <img src="assets/images/green-bike.jpg" alt="Green Bike" style="max-width:100%">
+            <div class="photoTag">
+                    <h4>RPG Game</h4>
+                    <div class="overlay">Photo courtesy of Alexander Shustov</div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="photoContainer">
+            <img src="assets/images/pelican366x222.jpg" alt="Pelican" style="max-width:100%">
+            <div class="photoTag">
+                    <h4>Trivia Game</h4>
+                    <div class="overlay">Photo courtesy of Yair Hazout</div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="photoContainer">
+            <img src="assets/images/keyboard_366x222_IMG_0249.jpg" alt="keyboard" style="max-width:100%">
+            <div class="photoTag">
+                    <h4>Hope Info Wallet</h4>
+                    <div class="overlay">Photo courtesy of Rayi Christian Wicaksono</div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+                <div class="photoContainer">
+                  <img src="assets/images/stones.jpg" alt="rocks" style="max-width:100%">
+                  <div class="photoTag">
+                          <h4>Rock Paper Scissors</h4>
+                          <div class="overlay">Photo courtesy of Joeri Römer</div>
+                  </div>
+                </div>
+        </div>
+        <div class="push"></div> 
+      </div>
+     </div>
+           
+    
+  <footer class="footerContainer">
+    <h6>Copyright &copy;</h6>
+  </footer>
+
+</body>
+</html>
