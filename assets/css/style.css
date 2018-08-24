@@ -233,6 +233,7 @@ label {
   .userDataForm {
       float: left;
 }
+
 #name {
     margin: auto;
     color: #777777;
@@ -317,16 +318,13 @@ text-align: center;
 }
 
 /* @media queries go here (bottom of style.css) */
-
-@media only screen and (max-width: 640px) {
-/* For small screen devices */
-    .navContainer, .contentHeader, .bioImage, .paraContent {
-        width: 100%;
+@media only screen and (max-width: 980px) {
+    .contentArea {
+      background-color: lightblue;
+      width: 100%;
     }
-    .navSect1 {
-        width: 100%;
-    }
-    .navSect2 {
+        
+    .navContainer {
         width: 100%;
     }
 
@@ -334,28 +332,30 @@ text-align: center;
 
 
 @media only screen and (max-width: 768px) {
-/* For medium screen devices */
-    .navContainer {
-        width: 100%;
-    }   
+    /* For medium screen devices */
+        .contentArea {
+          background-color: yellow;
+          width: 100%;
+        }
+        
+        .navContainer {
+            width: 100%;
+        }   
+    
+    }
+
+@media only screen and (max-width: 640px) {
+/* For small screen devices */
+    .contentArea {
+      background-color: green;
+    }
+
+    .navSect1 {
+       width: 50%;
+    }
+
+    .navSect2 {
+       width: 50%;
+    }
 
 }
-
-
-@media only screen and (max-width: 980px) {
-    .navContainer {
-        width: 100%;
-     
-    }
-   
-    .name {
-        width: 100%;
-     
-    }
-    
-
-}   
-
-
-
-
