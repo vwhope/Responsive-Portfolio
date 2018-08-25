@@ -10,20 +10,7 @@
      margin: 0;
 }
 
-/* all columns will float left (taken out of the normal page flow) */
-/* [class*="col-"] {
-    float: left;
-    padding: 15px;
-    width: 100%; 
-} */
-/* since float left takes the columns out of the page flow
-/* causing other elements to be placed as if the columns don't exist
-/* we have to clear the flow */
-/* .row::after {
-    content: "";
-    clear: both;
-    display: block;
-} */
+
 body {
     background-color: #ffffff;
     overflow: auto;
@@ -108,14 +95,14 @@ body {
 
 .contentArea {
     width: 960px;
-    height: 100%;
     margin: 0 auto;
     overflow: auto;
-    padding: 50px;
+    padding: 30px;
     margin-top: 50px;
+    
 
      /*  note to self: not setting a height allows page to move with content */
-   height: 600px;  
+   height: 650px;  
    background-color: #ffffff;
    border-color: #dddddd;
    border-style: solid;
@@ -132,14 +119,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* #grayLine {
-  position: relative;
-  height: 2px;
-  padding: 0px;
-  margin-bottom: 25px;
-  background: #dddddd;
-  
-} */
 .bioImage {
     display: block;
     position: relative;
@@ -222,23 +201,49 @@ z-index: 4;
 
  /**
   * Begin styles for contact page
-  **/      
+  **/   
+#contactForm ul {
+    list-style: none;
+}  
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+  
+
+
+  /* */
 label {
     margin: auto;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 28px;
+    border-style: none;
 }
-  .userDataForm {
-      float: left;
-}
-
+  
 #name {
     margin: auto;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 18px;
        
 }
@@ -246,14 +251,14 @@ label {
     margin: auto;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 18px;
 }
 #message {
     margin: auto;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 18px;
 }
 
@@ -321,41 +326,64 @@ text-align: center;
 @media only screen and (max-width: 980px) {
     .contentArea {
       background-color: lightblue;
-      width: 100%;
+      width: 85%;
     }
         
     .navContainer {
-        width: 100%;
+        width: 85%;
     }
+          
+    .photoContainer {
+        width: 100%;
+    } 
 
 }
-
 
 @media only screen and (max-width: 768px) {
     /* For medium screen devices */
         .contentArea {
           background-color: yellow;
-          width: 100%;
+          width: 85%;
         }
         
         .navContainer {
+            width: 85%;
+        }  
+
+        .photoContainer {
             width: 100%;
         }   
-    
+           
+       
     }
 
 @media only screen and (max-width: 640px) {
 /* For small screen devices */
     .contentArea {
       background-color: green;
+      width: 90%;
     }
 
     .navSect1 {
-       width: 50%;
+      width: 30%;
+      clear: both;
+     
     }
 
     .navSect2 {
-       width: 50%;
+       width: 60%;
+           
+    }
+    
+    .photoContainer {
+        width: 100%;
+    }   
+    
+  
+    textarea {
+        display: block;
+        width: 100%;
+        
     }
 
 }

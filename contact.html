@@ -53,25 +53,25 @@
             <!-- <div id="grayLine"></div> -->
 
             <!-- White contentArea Form with User name, User email, User message, Submit button -->
-            <div class="userDataForm">
-                <form class="contactForm">
-            
-                    <label for="name">Name</label> <br>
-                    <input type="text" class="name" name="Name" placeholder=" John Smith" size="129"> <br>
-                
-                    <label for="email">Email</label> <br>
-                    <input type="text" class="email" name="email" placeholder=" example@gmail.com" size="129"> <br>
-                
-                    <label for="message">Message</label> <br>
-                    <textarea class="message" name="message" placeholder=" " 
-                        style="width:855px; height:200px;"></textarea> <br>
-                
-                    <input class="submit" type="submit" value="Submit">
-            
-                </form>
-                
-            </div>
-
+           
+              <form id="contactForm">
+                 <ul>
+                   <li>
+                     <label for="name">Name</label> 
+                     <input type="text" class="name" name="Name" placeholder=" John Smith" required="required"> 
+                   </li>
+                   <li>
+                     <label for="email">Email</label> <br>
+                     <input type="text" class="email" name="email" placeholder=" example@gmail.com" required="required"> <br>
+                   </li>
+                   <li>
+                     <label for="message">Message</label> <br>
+                     <textarea id="message" name="message"  required="required"></textarea> 
+                    </li>
+                 </ul>
+                <input class="submit" type="submit" value="Submit">
+              </form>
+             
         </div>
     
     </div>
