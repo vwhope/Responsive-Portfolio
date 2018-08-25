@@ -21,6 +21,7 @@ body {
 /* Begin Navigation Bar Styles */
 
 #navTop {
+    position: relative;
     overflow: auto;
     margin: 0 auto;
     z-index: 99;
